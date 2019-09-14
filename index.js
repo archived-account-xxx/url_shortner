@@ -1,5 +1,5 @@
 express = require("express")
-port = 2000
+port = process.env.port||8080
 fs = require("fs")
 request = require("request")
 let randomIdGenerator = require("random-id-generator");
