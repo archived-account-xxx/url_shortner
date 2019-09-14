@@ -43,4 +43,10 @@ function server(res,req){
 }
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(server)
-app.listen(port)
+app.listen(port,function(err){
+  if(err){
+  console.log(err)
+    return
+  }
+  console.log(`Listening on port ${port}`)
+})
