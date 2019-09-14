@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="og:title" content="URL Shortner">
+    <meta name="og:description" content="URL Shortner is a website created by PDanielY#8648 that allows you to shortner your urls!">
+    <title>URL Shorter</title>
+  </head>
+  <body>
+    <a href="/custom">Custom Url</a>
+    <div id="first-page">
+    <form id="form" id="url-form" method="POST" action="/submit">
+      <label>Enter your url:</label><br>
+    <input type="url" required id="url" name="url"><br>
+    <button type="submit">Submit</button>
+    </form>
+    </div>
+    <div id="second-page" hidden>
+      <b id="message"></b>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

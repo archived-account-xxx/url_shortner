@@ -1,0 +1,17 @@
+form{
+  text-align:center;
+}
+input[type=email]{
+  padding: 12px 20px;
+}
+input[type=password]{
+  padding: 12px 20px;
+}
+input[type=submit]{
+  text-align:center;
+  background-color: green;
+  border:green;
+}
+input[type=submit]:hover{
+  box-shadow:0px 1px;
+}
