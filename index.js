@@ -37,6 +37,8 @@ function server(res,req){
     fs.createReadStream("./login.css").pipe(req)
   }else if(res.url == "/login.js"){
     fs.createReadStream("./login.js").pipe(req)
+  }else if(res.url == "/github"){
+    req.redirect("https://git.io/JeZri")
   }else{
     fs.createReadStream("./notfound.html").pipe(req)
   }
