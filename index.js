@@ -20,6 +20,7 @@ function server(res,req){
       if(error){
         req.write("ERROR")
         req.end()
+        console.log(error)
       }
       if(response == "error"){
         req.write("ERROR")
